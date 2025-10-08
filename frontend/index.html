@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IT Lab CTF – Défloutez l'image pour obtenir le flag !</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <h1>IT Lab CTF</h1>
+    <h2>Défloutez l'image pour obtenir le flag !</h2>
+</header>
+
+<div id="image-container">
+    <div class="cell" id="cell1">
+        <img src="assets/1.jpg" class="img-floue" alt="">
+        <img src="assets/1.jpg" class="img-net" alt="">
+    </div>
+    <div class="cell" id="cell2">
+        <img src="assets/2.jpg" class="img-floue" alt="">
+        <img src="assets/2.jpg" class="img-net" alt="">
+    </div>
+    <div class="cell" id="cell3">
+        <img src="assets/3.jpg" class="img-floue" alt="">
+        <img src="assets/3.jpg" class="img-net" alt="">
+    </div>
+    <div class="cell" id="cell4">
+        <img src="assets/4.jpg" class="img-floue" alt="">
+        <img src="assets/4.jpg" class="img-net" alt="">
+    </div>
+</div>
+
+<div class="enigme">
+    <p><strong>Énigme 1 :</strong> Reine du désert, lionne des Aurès, j’ai mené mon peuple contre les vagues venues du nord.</p>
+    <input type="text" placeholder="Votre réponse…"><button>Valider</button>
+</div>
+<div class="enigme">
+    <p><strong>Énigme 2 :</strong> Petit coquillage, mon sang pourpre vêtait les rois de Carthage.</p>
+    <input type="text" placeholder="Votre réponse…"><button>Valider</button>
+</div>
+<div class="enigme">
+    <p><strong>Énigme 3 :</strong> Je garde les secrets antiques sous les vagues du golfe de Tunis.</p>
+    <input type="text" placeholder="Votre réponse…"><button>Valider</button>
+</div>
+<div class="enigme">
+    <p><strong>Énigme 4 :</strong> Je suis une herbe sous-marine qui nourrit la mer et protège les côtes.</p>
+    <input type="text" placeholder="Votre réponse…"><button>Valider</button>
+</div>
+
+<div id="flag-zone">
+    <p><strong>Entrez le flag complet :</strong></p>
+    <input type="text" id="flagInput" placeholder="ITLABCTF{...}">
+    <br>
+    <button id="flagBtn">Valider le flag</button>
+    <div id="flagResult"></div>
+</div>
+
+<footer>
+    &copy; 2024 IT Lab CTF – Le savoir est aussi un trésor 🧭
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
